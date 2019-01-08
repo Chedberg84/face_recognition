@@ -5,19 +5,19 @@ import cv2
 video_capture = cv2.VideoCapture('rtsp://10.0.1.13:8554/unicast')
 
 # Load a sample picture and learn how to recognize it.
-chris_image = face_recognition.load_image_file("./home/chedberg/github/face_recognition_hedberg_pics/known/Chris.jpg")
+chris_image = face_recognition.load_image_file("Chris.jpg")
 chris_face_encoding = face_recognition.face_encodings(chris_image)[0]
 
-stevie_image = face_recognition.load_image_file("./home/chedberg/github/face_recognition_hedberg_pics/known/Stevie.jpg")
+stevie_image = face_recognition.load_image_file("Stevie.jpg")
 stevie_face_encoding = face_recognition.face_encodings(stevie_image)[0]
 
-alexis_image = face_recognition.load_image_file("./home/chedberg/github/face_recognition_hedberg_pics/known/Alexis.jpg")
+alexis_image = face_recognition.load_image_file("Alexis.jpg")
 alexis_face_encoding = face_recognition.face_encodings(alexis_image)[0]
 
-fiona_image = face_recognition.load_image_file("./home/chedberg/github/face_recognition_hedberg_pics/known/Fiona.jpg")
+fiona_image = face_recognition.load_image_file("Fiona.jpg")
 fiona_face_encoding = face_recognition.face_encodings(fiona_image)[0]
 
-oliver_image = face_recognition.load_image_file("./home/chedberg/github/face_recognition_hedberg_pics/known/Oliver.jpg")
+oliver_image = face_recognition.load_image_file("Oliver.jpg")
 oliver_face_encoding = face_recognition.face_encodings(oliver_image)[0]
 
 
