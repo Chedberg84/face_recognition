@@ -46,6 +46,7 @@ while True:
     ret, frame = video_capture.read()
 
     if ret:
+        print("ret:true")
 
         # Resize frame of video to 1/4 size for faster face recognition processing
         small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
@@ -59,6 +60,7 @@ while True:
 
         face_names = []
         for face_encoding in face_encodings:
+
             # See if the face is a match for the known face(s)
             matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
             name = "Unknown"
@@ -70,6 +72,7 @@ while True:
 
             face_names.append(name)
 
+            print("name:" + str(name))
 
         # Display the results
         for (top, right, bottom, left), name in zip(face_locations, face_names):
@@ -94,8 +97,8 @@ while True:
 
     print("sleep")
 
-    #wait 1/2 of a second
-    time.sleep(0.5)
+    #wait 1/2 of a second?
+    time.sleep(2.0)
 
     print("restart")
 
