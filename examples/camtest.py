@@ -48,7 +48,10 @@ while True:
     # Grab a single frame of video
     ret, frame = video_capture.read()
 
-    if ret is None:
+    print("ret:" + ret)
+    print("frame:" + frame)
+
+    if frame is None:
         print("video_capture.read() returned ret=false")
 
     # Resize frame of video to 1/4 size for faster face recognition processing
