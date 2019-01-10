@@ -2,7 +2,7 @@ import face_recognition
 import cv2
 
 
-video_capture = cv2.VideoCapture('rtsp://10.0.1.13:8554/unicast')
+video_capture = cv2.VideoCapture('rtsp://10.0.1.43:8554/unicast')
 
 # Load a sample picture and learn how to recognize it.
 chris_image = face_recognition.load_image_file("Chris.jpg")
