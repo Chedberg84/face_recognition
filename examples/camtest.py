@@ -48,8 +48,8 @@ while True:
     # Grab a single frame of video
     ret, frame = video_capture.read()
 
-    print("ret:" + ret)
-    print("frame:" + frame)
+    print("ret:" + str(ret)
+    print("frame:" + str(frame)
 
     if frame is None:
         print("video_capture.read() returned ret=false")
