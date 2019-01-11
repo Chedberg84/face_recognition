@@ -65,7 +65,6 @@ while True:
         #face_locations = face_recognition.face_locations(frame)
 
         print("face_locations:" + str(face_locations))
-        print(', '.join(face_locations))
 
         face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations)
         #face_encodings = face_recognition.face_encodings(frame, face_locations)
