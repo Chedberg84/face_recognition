@@ -58,18 +58,18 @@ while True:
         #rgb_small_frame = small_frame[:, :, ::-1]
         rgb_small_frame = frame[:, :, ::-1]
 
-        print("rgb_small_frame:" + str(rgb_small_frame))
+        #print("rgb_small_frame:" + str(rgb_small_frame))
 
         # Find all the faces and face encodings in the current frame of video
         face_locations = face_recognition.face_locations(rgb_small_frame)
         #face_locations = face_recognition.face_locations(frame)
 
-        print("face_locations:" + str(face_locations))
+        #print("face_locations:" + str(face_locations))
 
         face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations)
         #face_encodings = face_recognition.face_encodings(frame, face_locations)
 
-        print("face_encodings:" + str(face_encodings))
+        #print("face_encodings:" + str(face_encodings))
 
         face_names = []
         for face_encoding in face_encodings:
